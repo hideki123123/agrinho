@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/pinha-icon.png" type="image/x-icon">
+    <title> SUPER Gerador de Energia</title>
+</head>
+<body>
+    <header>
+        <div class="titles">
+            <img src="lampada.jpeg" alt="lampada">
+            <div>
+                <h1>SUPER</h1>
+                <h2>Sistema inteligente de geração energética</h2>
+            </div>
+        </div>
+
+        <div class="menu">
+            <i class="material-icons" onclick="clickMenu()"><img src="./assets/menu.png" id="menu-icon" alt="menu"></i>
+            <menu id="menu-components">
+            <ul>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#objective">Objetivo</a></li>
+                <li><a href="#important">Importância</a></li>
+                <li><a href="#materials">Recursos</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>        
+            </menu>
+        </div>
+    </header>
+
+    <main>
+        <div class="intro">
+            <section class="container" id="about">
+                <h2>Sobre o projeto</h2>
+                <p>
+                    Nossa iniciativa busca promover sistemas eficazes para a produção de energias limpas e sustentáveis
+                </p>
+            </section>
+            <section class="container">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <img id="slide-0" class="slide zero" src="./assets/detector-enchentes-16x9.jpg" alt="Detector de enchentes">
+                        <img id="slide-1" class="slide one" src="./assets/alerta-16x9.jpg" alt="Imagem com celular e casa recebendo alertas">
+                        <img id="slide-2" class="slide two" src="./assets/peace-16x9.jpg" alt="Imagem representando tranquilidade">
+                    </div>
+
+                    <div class="slider-nav">
+                        <input type="radio" name="radio-button" id="radio0" onclick="changeUrl(0)">
+                        <input type="radio" name="radio-button" id="radio1" onclick="changeUrl(1)">
+                        <input type="radio" name="radio-button" id="radio2" onclick="changeUrl(2)" <="" div=""> 
+
+                    <div class="manual">
+                        <label for="radio0" class="manual-btn"></label>
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                    </div>
+                </div>
+            </div></section>
+        </div>
+        
+        <div class="content">
+            <section class="container objective" id="objective">               
+                <img src="./assets/brazil.jpg" alt="Foto de um bairro brasileiro">       
+                <div>
+                    <h2>Nosso objetivo</h2>
+                    <p>Nosso objetivo é produzir energia limpa e sustentável porra</p>
+                </div>                      
+            </section>
+            
+            <section class="container important" id="important">                
+                <div>
+                    <h2>Importância</h2>
+                    <p> O uso de energias insustentáveis vêm tornando o planeta um lugar cada dia menos habitável. Dessa forma, a SUPER decidiu agir sobre o tema, recorrendo a novas tecnologias para gerar energia limpa e sustentável. 
+                    </p>
+                </div>
+                <img src="./assets/sad-parent-child.jpg" alt="Fode de mãe e filha desanimadas">              
+            </section>
+
+            <section class="container materials" id="materials">               
+                <img src="./assets/circuits.jpg" alt="Foto de um circuito">       
+                <div>
+                    <h2>Recursos</h2>
+                    <p>Os recursos necessários para tal:</p>
+                    <ul>
+                        <li>placas solares</li>
+                        <li>hélices em um geral rsrs</li>
+                        <li>cobre</li>
+                        <li>sol </li>
+                        <li>vento</li>
+                        <li>água</li>
+                    </ul>
+                </div>                      
+            </section>
+        </div>
+
+        <div class="feedback">
+            <h2>E aí? O que achou?</h2>
+            <form id="feedback" onsubmit="check(event)" action="https://formspree.io/f/xayreoag" method="POST" target="_blank">
+                <label>
+                    Seu email:
+                    <input type="email" name="email" id="email">
+                </label>
+                <label>
+                    Seu nome:
+                    <input type="text" name="text" id="name">
+                </label>
+                <label>
+                    Seu feedback:
+                    <textarea name="message" id="textArea"></textarea>
+                </label>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <img src="./assets/pinha.png" alt="Uma pinha">
+        <a href="https://github.com/EdOzz42/aerocaria" target="_blank">@Aerocária</a>      
+    </footer>
+
+    <script src="./script.js"></script>
+
+</body></html>
